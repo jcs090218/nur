@@ -1,4 +1,4 @@
-# Jen-Chieh's Nix User Repository (NUR) Packages
+# Jen-Chieh's NUR Packages
 
 **My personal [NUR][] repository**
 
