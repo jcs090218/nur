@@ -22,8 +22,5 @@ rustPlatform.buildRustPackage rec {
 		description = "Rewrite emacs-flx in Rust for dynamic modules";
 		homepage = "https://github.com/jcs090218/flx-rs";
 		license = lib.licenses.mit;
-		maintainers = [
-			jcs090218
-		];
 	};
 }
