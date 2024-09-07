@@ -6,6 +6,10 @@
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-jcs090218-blue.svg)](https://jcs090218.cachix.org)
 
+## 🔗 Links
+
+- https://app.cachix.org/
+
 
 <!-- Links -->
 
