@@ -11,6 +11,12 @@
 
 - https://app.cachix.org/
 
+## ⚜️ License
+
+This repository is [MIT](./LICENSE) licensed.
+
+This includes all contributions from the community.
+
 
 <!-- Links -->
 
