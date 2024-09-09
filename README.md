@@ -1,3 +1,4 @@
+[![built with nix](https://img.shields.io/static/v1?logo=nixos&logoColor=white&label=&message=Built%20with%20Nix&color=41439a)](https://builtwithnix.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Cachix Cache](https://img.shields.io/badge/cachix-jcs090218-blue.svg)](https://jcs090218.cachix.org)
 
