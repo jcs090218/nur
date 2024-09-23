@@ -6,7 +6,7 @@
 
 rustPlatform.buildRustPackage rec {
 	pname = "flxy-rs";
-	version = "0.1.18";
+	version = "0.1.19";
 
 	src = fetchFromGitHub {
 		owner = "jcs-legacy";
