@@ -12,7 +12,7 @@ rustPlatform.buildRustPackage rec {
 		owner = "jcs-legacy";
 		repo = pname;
 		rev = "${version}";
-		sha256 = "";
+		sha256 = "sha256-gSv5KloBRqrDXvWhYD1BZ8e+CN1ci+Pexde6+LCUsxw=";
 	};
 
 	cargoHash = "";
