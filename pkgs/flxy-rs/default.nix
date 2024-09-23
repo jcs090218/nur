@@ -19,7 +19,7 @@ rustPlatform.buildRustPackage rec {
 	doCheck = false;
 
 	meta = {
-		description = "Rewrite emacs-flx in Rust for dynamic modules";
+		description = "Fast, character-based search library in Rust";
 		homepage = "https://github.com/jcs-legacy/flxy-rs";
 		license = lib.licenses.mit;
 	};
