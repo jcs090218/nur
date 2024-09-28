@@ -6,10 +6,10 @@
 
 rustPlatform.buildRustPackage rec {
 	pname = "flx-rs";
-	version = "0.2.0";
+	version = "0.2.1";
 
 	src = fetchFromGitHub {
-		owner = "jcs090218";
+		owner = "the-flx";
 		repo = pname;
 		rev = "${version}";
 		sha256 = "sha256-OFm0Jk06Mxzr4F7KrMBGFqcDSuTtrMvBSK99bbOgua4=";
@@ -20,7 +20,7 @@ rustPlatform.buildRustPackage rec {
 
 	meta = {
 		description = "Rewrite emacs-flx in Rust for dynamic modules";
-		homepage = "https://github.com/jcs090218/flx-rs";
+		homepage = "https://github.com/the-flx/flx-rs";
 		license = lib.licenses.mit;
 	};
 }
