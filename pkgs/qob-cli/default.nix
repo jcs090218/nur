@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ sbcl ];
 
-  configurePhase = ''
+  installPhase = ''
     make build
   '';
 
