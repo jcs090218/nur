@@ -18,8 +18,9 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ sbcl ];
 
-  buildPhase = ''
+  installPhase = ''
     make build
+    install -m755 -D bin/sbcl/qob $out/bin/qob
   '';
 
   dontStrip = true;
