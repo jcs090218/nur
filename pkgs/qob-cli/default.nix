@@ -18,10 +18,6 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ sbcl ];
 
-  installPhase = ''
-    make install-ql
-  '';
-
   dontStrip = true;
 
   meta = {
