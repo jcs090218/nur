@@ -18,13 +18,13 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ sbcl ];
 
-  buildPhase = ''
+  unpackPhase = ''
     curl -O https://beta.quicklisp.org/quicklisp.lisp
     sbcl --load "./quicklisp.lisp" --eval "(quicklisp-quickstart:install)"
-    make build
   '';
 
   installPhase = ''
+    make build
     install -m755 -D bin/sbcl/qob $out/bin/qob
   '';
 
