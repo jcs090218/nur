@@ -7,13 +7,13 @@
 
 stdenv.mkDerivation rec {
   pname = "qob-cli";
-  version = "0.1.0";
+  version = "0.1.1";
 
   src = fetchFromGitHub {
     owner = "cl-qob";
     repo = "cli";
     rev = version;
-    hash = "sha256-xosaZWIZi7/x3u7v1lzIhvnCAzbKZbFByDFoQ5LWQgAa";
+    hash = "sha256-xosaZWIZi7/x3u7v1lzIhvnCAzbKZbFByDFoQ5LWQgA=";
   };
 
   buildInputs = [ sbcl ];
