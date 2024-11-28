@@ -7,7 +7,7 @@
 
 stdenv.mkDerivation rec {
   pname = "qob-cli";
-  version = "0.1.0";
+  version = "0.1.1";
 
   src = fetchFromGitHub {
     owner = "cl-qob";
