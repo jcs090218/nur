@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ sbcl' ];
 
-  buildFlags = [ "build-nix" ];
+  buildFlags = [ "build" ];
 
   installPhase = ''
     install -m755 -D bin/sbcl/qob $out/bin/qob
