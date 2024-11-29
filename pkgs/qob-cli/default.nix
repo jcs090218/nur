@@ -2,7 +2,6 @@
   lib,
   stdenv,
   fetchFromGitHub,
-  curl,
   sbcl,
 }:
 
@@ -18,6 +17,15 @@ stdenv.mkDerivation rec {
   };
 
   buildInputs = [ sbcl curl ];
+
+  nativeBuildInputs = [
+    (pkgs.sbcl.withPackages
+      (ps: with ps; [
+        clingon
+        copy-directory
+        deploy
+      ]))
+  ];
   
   buildFlags = [ "build-nix" ];
 
