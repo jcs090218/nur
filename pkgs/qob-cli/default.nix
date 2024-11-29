@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
     hash = "sha256-JVgYkerb3PvxYfIdNFB94wL+EOF7eCgNlLELi1e55wI=";
   };
 
-  buildInputs = [ sbcl curl ];
+  buildInputs = [ sbcl ];
 
   nativeBuildInputs = [
     (pkgs.sbcl.withPackages
