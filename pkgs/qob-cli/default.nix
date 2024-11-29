@@ -14,7 +14,7 @@ stdenv.mkDerivation rec {
     owner = "cl-qob";
     repo = "cli";
     rev = version;
-    hash = "sha256-ocH3y7Xa0oyDJN9E/LbVgLaMdwafdWVTOHVrCdEnOpa=";
+    hash = "sha256-JVgYkerb3PvxYfIdNFB94wL+EOF7eCgNlLELi1e55wI=";
   };
 
   buildInputs = [ sbcl curl ];
