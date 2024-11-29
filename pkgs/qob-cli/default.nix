@@ -17,10 +17,10 @@ stdenv.mkDerivation rec {
   };
 
   buildInputs = [ sbcl ];
+  
+  buildFlags = [ "build-nix" ];
 
   installPhase = ''
-    make install-ql
-    make build
     install -m755 -D bin/sbcl/qob $out/bin/qob
   '';
 
