@@ -13,7 +13,7 @@ stdenv.mkDerivation rec {
     owner = "cl-qob";
     repo = "cli";
     rev = version;
-    hash = "sha256-JVgYkerb3PvxYfIdNFB94wL+EOF7eCgNlLELi1e54wI=";
+    hash = "sha256-81S/5Ff2a4caoZhysPvnXLVRXlJBg6alR/afsF170kc=";
   };
 
   sbcl' = pkgs.sbcl.withPackages (ps: with ps; [
