@@ -21,9 +21,9 @@ stdenv.mkDerivation rec {
   #   clingon
   #   deploy
   # ]);
-
-  nativeBuildInputs = [ "sbcl" ];
-
+  #
+  # nativeBuildInputs = [ sbcl' ];
+  #
   # buildFlags = [ "build" ];
   #
   # installPhase = ''
