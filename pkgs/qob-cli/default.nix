@@ -17,6 +17,7 @@ stdenv.mkDerivation rec {
   };
 
   sbcl' = pkgs.sbcl.withPackages (ps: with ps; [
+    asdf
     copy-directory
     clingon
     deploy
