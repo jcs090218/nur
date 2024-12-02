@@ -16,11 +16,11 @@ stdenv.mkDerivation rec {
     hash = "sha256-81S/5Ff2a4caoZhysPvnXLVRXlJBg6alR/afsF170kc=";
   };
 
-  sbcl' = pkgs.sbcl.withPackages (ps: with ps; [
-    copy-directory
-    clingon
-    deploy
-  ]);
+  # sbcl' = pkgs.sbcl.withPackages (ps: with ps; [
+  #   copy-directory
+  #   clingon
+  #   deploy
+  # ]);
 
   nativeBuildInputs = [ sbcl' ];
 
