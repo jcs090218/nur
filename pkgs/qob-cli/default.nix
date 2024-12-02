@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
   buildInputs = [ sbcl' ];
 
   buildPhase = ''
-    sbcl --load --script "./scripts/_prepare.lisp"
+    sbcl --script "./scripts/_prepare.lisp"
   '';
 
   # buildFlags = [ "build" ];
