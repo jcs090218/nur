@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     deploy
   ]);
 
-  nativeBuildInputs = [ sbcl' ];
+  # nativeBuildInputs = [ sbcl' ];
 
   # buildFlags = [ "build" ];
   #
