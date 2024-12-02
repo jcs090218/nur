@@ -17,7 +17,6 @@ stdenv.mkDerivation rec {
   };
 
   sbcl' = pkgs.sbcl.withPackages (ps: with ps; [
-    asdf
     copy-directory
     clingon
     deploy
@@ -26,7 +25,7 @@ stdenv.mkDerivation rec {
   buildInputs = [ sbcl' ];
 
   buildPhase = ''
-    sbcl --eval "(progn (require 'asdf) (asdf:load-system "clingon"))"
+    sbcl --eval "(progn (require :asdf) (asdf:load-system :clingon))"
   '';
 
   # buildFlags = [ "build" ];
