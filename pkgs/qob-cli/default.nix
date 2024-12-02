@@ -24,6 +24,10 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ sbcl' ];
 
+  buildPhase = ''
+    sbcl --version
+  '';
+
   # buildFlags = [ "build" ];
   #
   # installPhase = ''
