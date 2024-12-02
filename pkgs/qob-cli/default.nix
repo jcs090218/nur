@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
   buildInputs = [ sbcl' ];
 
   buildPhase = ''
-    sbcl --eval "(asdf:load-system "clingon")"
+    sbcl --eval "(progn (require 'asdf) (asdf:load-system "clingon"))"
   '';
 
   # buildFlags = [ "build" ];
