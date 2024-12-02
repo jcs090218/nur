@@ -30,6 +30,7 @@ stdenv.mkDerivation rec {
     install -m755 -D bin/sbcl/qob $out/bin/qob
   '';
 
+  # prevent corrupting core in exe
   dontStrip = true;
 
   meta = {
