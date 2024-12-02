@@ -24,11 +24,11 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ sbcl' ];
 
-  buildFlags = [ "build" ];
-
-  installPhase = ''
-    install -m755 -D bin/sbcl/qob $out/bin/qob
-  '';
+  # buildFlags = [ "build" ];
+  #
+  # installPhase = ''
+  #   install -m755 -D bin/sbcl/qob $out/bin/qob
+  # '';
 
   # prevent corrupting core in exe
   dontStrip = true;
